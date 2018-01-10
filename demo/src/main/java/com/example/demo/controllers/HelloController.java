@@ -17,4 +17,9 @@ public class HelloController {
 	public String hello(@PathVariable String name) {
 		return "Hello, "+ name +"!";
 	}
+	
+	@GetMapping("/")
+	public String index() {
+		return "index";
+	}
 }
